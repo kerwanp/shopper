@@ -1,0 +1,11 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: true
+
+  eftec\bladeone\BladeOne: ~
+
+  Shopper\:
+    resource: '../*'
+    exclude: '../{DependencyInjection,Entity,Migrations,Tests,Kernel.php}'
